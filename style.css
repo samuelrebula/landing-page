@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -13,7 +15,7 @@ body {
     background-color: #1F2937;
 }
 
-.header {
+header {
     display: flex;
     flex-direction: row;
 }
@@ -74,7 +76,7 @@ li {
 .secondary-text {
     font-size: 18px;
     color: #E5E7EB;
-    /* padding-bottom: 18px; */
+    padding-bottom: 18px;
 }
 
 .sign-up {
@@ -102,7 +104,7 @@ li {
     display: flex;
     width: auto;
     height: auto;
-    margin: 150px 250px;
+    margin: 180px 250px;
 }
 
 .hero-left,
@@ -135,6 +137,7 @@ li {
     font-weight: 900;
     text-align: center;
     margin: 50px;
+    color: #1F2937;
 }
 
 .square {
@@ -149,7 +152,6 @@ li {
     justify-content: center;
     align-items: center;
     gap: 3em;
-    /* border: 3px solid orange; */
     margin-bottom: 100px;
 }
 
@@ -158,13 +160,87 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* flex: 1; */
-    /* border: 3px solid red; */
+    /* flex: 1; *//
 }
 
-.text {
+.info-text {
     max-width: 150px;
     text-align: center;
     padding-top: 5px;
-    /* border: 3px solid green; */
+}
+
+/* third part */
+
+.container-3 {
+    background-color: #E5E7EB;
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+}
+
+.quote {
+    margin-bottom: 10px;
+}
+
+.autor {
+    align-self: flex-end;
+}
+
+.quote p {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.autor p {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+footer {
+    background-color: #1F2937;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 100;
+    padding: 30px;
+}
+
+.footer-references p {
+    padding: 6px;
+}
+
+.footer-socials {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-socials a {
+    margin-right: 10px;
+}
+
+.footer a {
+    font-size: 40px;
+}
+
+.footer a:hover {
+    text-decoration: none;
 }

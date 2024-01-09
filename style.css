@@ -1,10 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Include padding and border in box model */
+    box-sizing: border-box;
 }
 
 body {
+    margin: 0;
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
@@ -23,18 +22,17 @@ body {
 .header-left {
     display: flex;
     align-items: center;
-    width: 50%;
-    /* border: 3px solid goldenrod; */
+    flex: 1;
 }
 
 .header-left {
-    justify-content: flex-start;    
-    padding-left: 70px;
+    justify-content: flex-start;
+    padding-left: 270px;    
 }
 
 .header-right {
     justify-content: flex-end;
-    padding-right: 70px;
+    padding-right: 250px; 
 }
 
 .header-link {
@@ -43,10 +41,16 @@ body {
     margin: 10px;
 }
 
+.header-link:nth-child(3) {
+   margin-right: 0;
+   padding-right: 0;
+}
+
 .header-logo {
     font-size: 24px;
     color: #E5E7EB;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 ul {
@@ -56,19 +60,21 @@ ul {
 }
 
 li {
-    padding: 10px;
+    padding: 15px;
+    cursor: pointer;
 }
 
 .main-text {
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
+    margin: 0;
 }
 
 .secondary-text {
     font-size: 18px;
     color: #E5E7EB;
-    padding-bottom: 18px;
+    /* padding-bottom: 18px; */
 }
 
 .sign-up {
@@ -94,13 +100,15 @@ li {
 
 .hero {
     display: flex;
-    padding: 50px;
+    width: auto;
+    height: auto;
+    margin: 150px 250px;
 }
 
 .hero-left,
 .hero-right {
     padding: 20px;
-    width: 50%;
+    flex: 1;
 }
 
 .hero-left {
@@ -109,12 +117,13 @@ li {
     justify-content: center;
 }
 
-.hero-right img.first-image {
-    max-width: 100%;
-    height: auto;
-}
-
 .hero-right {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #536878;
+}
+
+.image-placeholder {
+    color: white;
 }
